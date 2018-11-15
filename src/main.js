@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Buefy from 'buefy'
+import VueSimpleSVG from 'vue-simple-svg'
 
+Vue.use(VueSimpleSVG)
 Vue.use(Buefy)
 
 Vue.config.productionTip = false

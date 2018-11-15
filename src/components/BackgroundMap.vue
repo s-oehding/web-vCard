@@ -8,7 +8,8 @@
       @update:center="centerUpdate"
       @update:zoom="zoomUpdate">
       <l-tile-layer
-        :url="url"
+        :url="`https://api.mapbox.com/styles/v1/${mapId}/tiles/{z}/{x}/{y}?access_token=${token}`"
+        :token="token"
         :attribution="attribution"/>
       <l-marker :lat-lng="marker">
         <l-popup>
@@ -38,15 +39,17 @@ export default {
   },
   data () {
     return {
-      token: 'pk.eyJ1Ijoicy1vZWhkaW5nIiwiYSI6ImNqaW01MmtyeTAwZzczdm56ZDU4eTh6eTgifQ.rYDdC3L3oqPNfWXKAjGO5A',
+      mapId: 's-oehding/cjohmxxu70kwm2rljjzmmq5dn',
+      token: 'pk.eyJ1Ijoicy1vZWhkaW5nIiwiYSI6ImNqb2libnh2NjA3aDMzcW9qZXFxN3M2cGEifQ.gd8zU5n7g7cCkMxhvkwePw',
       zoom: 13,
       center: L.latLng(47.413220, -1.219482),
-      url: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
+      url: 'mapbox://styles/s-oehding/cjohmxxu70kwm2rljjzmmq5dn',
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
       marker: L.latLng(47.413220, -1.219482),
       currentZoom: 11.5,
       currentCenter: L.latLng(47.413220, -1.219482),
       showParagraph: false,
+      map: null,
       mapOptions: {
         zoomSnap: 0.5
       }
@@ -65,6 +68,12 @@ export default {
     popupClick () {
       alert('Popup Click!');
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.map = this.$refs.map.mapObject // work as expected
+      let osmb = new OSMBuildings(this.map).loadData()
+    })
   }
 };
 </script>

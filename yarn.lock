@@ -2144,6 +2144,11 @@ csso@^3.5.0:
   dependencies:
     css-tree "1.0.0-alpha.29"
 
+cssom@^0.3.2:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.3.4.tgz#8cd52e8a3acfd68d3aed38ee0a640177d2f9d797"
+  integrity sha512-+7prCSORpXNeR4/fUP3rL+TzqtiFfhMvTd7uEqMdgPvLPt4+uzFUeufx5RHjGTACCargg/DiEt/moMQmvnfkog==
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -4876,6 +4881,11 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+osmbuildings@^0.2.0-b:
+  version "0.2.0-b"
+  resolved "https://registry.yarnpkg.com/osmbuildings/-/osmbuildings-0.2.0-b.tgz#fb81997962f8b4050568e9815690cf897d7e23e7"
+  integrity sha1-+4GZeWL4tAUFaOmBVpDPiX1+I+c=
+
 p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
@@ -6862,6 +6872,13 @@ vue-loader@^15.4.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-simple-svg@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/vue-simple-svg/-/vue-simple-svg-1.3.2.tgz#6062bcedffa28ba344f733b21d124be04d65da1f"
+  integrity sha512-sgHFYFEF4PafWs+00Fk2V73lBZGk7YNr/F1hiSIHV5yY6fHNS4QUAw69zBpjsx+jawiFzBlMyMcSMXzxRKFfIA==
+  dependencies:
+    cssom "^0.3.2"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
