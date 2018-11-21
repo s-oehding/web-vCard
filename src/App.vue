@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <BackgroundMap />
-    <div id="main">
-      <LogoOrb />
-    </div>
+    <Mapbox id="mapbox" />
+    <!-- <div id="main">
+      
+    </div> -->
   </div>
 </template>
 
 <script>
-import BackgroundMap from './components/BackgroundMap.vue'
+import Mapbox from './components/Mapbox.vue'
 import LogoOrb from './components/LogoOrb.vue'
 
 export default {
   name: 'app',
   components: {
-    BackgroundMap, LogoOrb
+    Mapbox, LogoOrb
   }
 }
 </script>

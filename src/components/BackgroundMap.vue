@@ -1,6 +1,7 @@
 <template>
   <div id="bg-map">
     <l-map
+    ref="map"
       :zoom="zoom"
       :center="center"
       :options="mapOptions"
@@ -69,10 +70,9 @@ export default {
       alert('Popup Click!');
     }
   },
-  mounted () {
+  created () {
     this.$nextTick(() => {
-      this.map = this.$refs.map.mapObject // work as expected
-      let osmb = new OSMBuildings(this.map).loadData()
+      this.map = this.$refs.map.mapObject
     })
   }
 };
