@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
   export default {
     name: 'LogoOrb',
     props: {},
@@ -29,6 +30,13 @@
           { path: 'orb/portal-yellow-semi.svg' }
         ]
       }
+    },
+    mounted() {
+      for (let i = 0; i < 10; i++) {
+        let rand = Math.round(Math.random()) * 2 - 1
+        gsap.to(`.orb-${i}`, 10 * i, {rotation: (360 * rand), ease: 'linear', repeat:-1})
+      }
+      
     },
     methods: {
       toggle () {
@@ -64,52 +72,6 @@
       svg {
         width: 100%;
         height: 100%;
-      }
-
-      &:nth-child(odd) {
-        animation: orb-r 1s linear infinite;
-      }
-      &:nth-child(even) {
-        animation: orb-l 1s linear infinite;
-      }
-      &:nth-child(1) {
-          animation-duration: 130s
-      }
-
-      &:nth-child(2) {
-          animation-duration: 140s
-      }
-
-      &:nth-child(3) {
-          animation-duration: 150s
-      }
-
-      &:nth-child(4) {
-          animation-duration: 160s
-      }
-
-      &:nth-child(5) {
-          animation-duration: 170s
-      }
-
-      &:nth-child(6) {
-          animation-duration: 80s
-      }
-
-      &:nth-child(7) {
-          animation-duration: 90s
-      }
-
-      &:nth-child(8) {
-          animation-duration: 100s
-      }
-
-      &:nth-child(9) {
-          animation-duration: 110s
-      }
-
-      &:nth-child(10) {
-          animation-duration: 120s
       }
     }
   }

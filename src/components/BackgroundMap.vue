@@ -41,7 +41,7 @@ export default {
   data () {
     return {
       mapId: 's-oehding/cjohmxxu70kwm2rljjzmmq5dn',
-      token: 'pk.eyJ1Ijoicy1vZWhkaW5nIiwiYSI6ImNqb2libnh2NjA3aDMzcW9qZXFxN3M2cGEifQ.gd8zU5n7g7cCkMxhvkwePw',
+      token: 'pk.eyJ1Ijoicy1vZWhkaW5nIiwiYSI6ImNrN25lbGV5OTAwZDYzbHJzeWFnMXlkd3AifQ.mg3e3fIWvD2aKHj1t6tzaQ',
       zoom: 13,
       center: L.latLng(47.413220, -1.219482),
       url: 'mapbox://styles/s-oehding/cjohmxxu70kwm2rljjzmmq5dn',

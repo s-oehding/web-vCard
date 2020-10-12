@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Mapbox id="mapbox" />
-    <!-- <div id="main">
-      
-    </div> -->
+    <div id="main">
+      <logo-orb />
+    </div>
   </div>
 </template>
 

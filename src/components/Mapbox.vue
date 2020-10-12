@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       accessToken: "pk.eyJ1Ijoicy1vZWhkaW5nIiwiYSI6ImNqb2libnh2NjA3aDMzcW9qZXFxN3M2cGEifQ.gd8zU5n7g7cCkMxhvkwePw",
-      mapStyle: "mapbox://styles/mapbox/dark-v9",
+      mapStyle: "mapbox://styles/s-oehding/cjok1jvhz0a8t2so3yik2gth4",
       map: null,
       options: {
         center: [0, 0],
