@@ -14,7 +14,7 @@ module.exports = {
     tagAnnotation: 'Release ${version}',
     tagArgs: [],
     push: true,
-    pushRepo: repoUrl,
+    pushRepo: 'git@github.com:s-oehding/web-vCard.git',
     pushArgs: [
       '--follow-tags'
     ]
